@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #F2F2F2;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+svg {
+    cursor: pointer;
+    width: 2em;
+    border-radius: 12%;
+    border: 1px solid black;
+    fill: black;
+    background-color: white;
+    margin: 10%;
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+}
+
+
+label+input:checked {
+    cursor: pointer
+}
+
+:checked+svg {
+    background-color: black;
+  }
+
+  :focus-visible+svg {
+    outline: 2px solid black;
+  }
+
+svg polyline {
+    stroke: white;
+}
